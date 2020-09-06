@@ -1,0 +1,19 @@
+public class login{
+	private String user;
+	private String pass;
+
+	@PostConstruct
+	void cargar(){}
+
+	@PreDestroy
+	void eliminar(){}
+
+	public void loginlistener(){
+		try{
+			Procesos.Registro(this.user,this.pass);
+			Util.crearMensaje("login exitoso",SEVERITY_INFO);
+		}catch(Excpetion e){
+			Util.crearMensaje("login fallido",SEVERITY_ERROR);
+		}
+	}
+}
