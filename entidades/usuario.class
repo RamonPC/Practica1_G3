@@ -1,0 +1,25 @@
+public class Usuario{
+    private String username;
+    private String password;
+
+    public Usuario(String us,String pw){
+        this.username = us;
+        this.password = pw;
+    }
+
+    public string getusername(){
+        return this.username;
+    }
+
+    public string getpassword(){
+        return this.password;
+    }
+
+    public setpassword(String pw){
+        this.password = pw;
+    }
+
+    public setusername(String us){
+        this.username = us;
+    }
+}
