@@ -9,8 +9,10 @@ public class OperacionesBasicas{
     boolean espar(int n){
         if(n % 2 == 0 ) {
             return true;
+            system.output.println("El Numero es Par");
         }
         else{
+            system.output.println("El Numero es Impar");
             return false;
         }
 
@@ -18,7 +20,8 @@ public class OperacionesBasicas{
 		return ((a+num)/2)*(num);
 	}
     
-    boolean isPrime(int n) {
+    boolean isPrime(int o, int p, int q) {
+        int n = o + p + q;
         //revisa si n es multiplo de 2
         if (n%2==0) return false;
         //si no, solo revisa los impares
@@ -29,6 +32,8 @@ public class OperacionesBasicas{
         return true;
     }
     public decimal AreaTriangulo(decimal Base, decimal Altura){
+        System.Out.Println($"La base ingresada es: {Base}");
+        System.Out.Println($"La altura ingresada es: {Altura}");
         return ((Base*Altura)/2);
     }
 }
