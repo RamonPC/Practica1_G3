@@ -56,4 +56,8 @@ public class OperacionesBasicas{
     public decimal areaRectangulo(int area, int base){
         return area * base;
     }
+
+    public int multiplicacion(int a, int b){
+        return a * b;
+    }
 }
