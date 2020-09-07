@@ -1,6 +1,9 @@
 public class OperacionesBasicas{
 
     public static long fibonacciRecursivo(long posicion) {
+        if (posicion > 99){
+            return  posicion;
+        }
 		if (posicion < 2)
 			return posicion;
 		return fibonacciRecursivo(posicion - 1) + fibonacciRecursivo(posicion - 2);
