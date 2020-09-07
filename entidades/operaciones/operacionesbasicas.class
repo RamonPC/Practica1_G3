@@ -1,3 +1,6 @@
 public class OperacionesBasicas{
     
+    public decimal AreaTriangulo(decimal Base, decimal Altura){
+        return ((Base*Altura)/2);
+    }
 }
