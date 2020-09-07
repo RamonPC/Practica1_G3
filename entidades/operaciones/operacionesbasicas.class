@@ -14,8 +14,8 @@ public class OperacionesBasicas{
             return false;
         }
 
-	public int sumatoriaSucesiva(int num){
-		return ((1+num)/2)*(num);
+	public int sumatoriaSucesiva(int a, int num){
+		return ((a+num)/2)*(num);
 	}
     
     boolean isPrime(int n) {
