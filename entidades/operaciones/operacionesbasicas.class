@@ -28,4 +28,7 @@ public class OperacionesBasicas{
         }
         return true;
     }
+    public decimal AreaTriangulo(decimal Base, decimal Altura){
+        return ((Base*Altura)/2);
+    }
 }
