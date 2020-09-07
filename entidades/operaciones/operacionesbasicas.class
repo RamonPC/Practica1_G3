@@ -9,8 +9,10 @@ public class OperacionesBasicas{
     boolean espar(int n){
         if(n % 2 == 0 ) {
             return true;
+            system.output.println("El Numero es Par");
         }
         else{
+            system.output.println("El Numero es Impar");
             return false;
         }
 
