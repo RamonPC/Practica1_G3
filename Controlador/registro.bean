@@ -3,7 +3,11 @@ public class Registro{
     private String pass;
 
     @PostConstruct
-    Void cargar(){}
+    Void cargar(){
+        if(user.length <= 0){
+            Util.crearMensaje("Usuario invalido",SEVERITY_WARN);
+        }
+    }
 
     @PostDestroy
     Void eliminar(){}
