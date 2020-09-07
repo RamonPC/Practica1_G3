@@ -8,11 +8,14 @@ public class login{
 	@PreDestroy
 	void eliminar(){}
 
+	//post method to login into the system
 	public void loginlistener(){
 		try{
 			Procesos.Registro(this.user,this.pass);
+			//Login exitoso de usuario
 			Util.crearMensaje("login exitoso",SEVERITY_INFO);
 		}catch(Excpetion e){
+			//login fallido de usuario
 			Util.crearMensaje("login fallido",SEVERITY_ERROR);
 		}
 	}
