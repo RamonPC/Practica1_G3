@@ -10,6 +10,7 @@ public class EstadoUsuario{
 	public EstadoUsuario(int codEstado, String descripcion){
 		this.codEstado = codEstado;
 		this.descripcion = descripcion;
+		this.Estado = Valores.NoActivo;
 	}
 
 	public EstadoUsuario(){
