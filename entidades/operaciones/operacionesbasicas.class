@@ -1,7 +1,31 @@
 public class OperacionesBasicas{
 
+    public static long fibonacciRecursivo(long posicion) {
+		if (posicion < 2)
+			return posicion;
+		return fibonacciRecursivo(posicion - 1) + fibonacciRecursivo(posicion - 2);
+	}
+
+    boolean espar(int n){
+        if(n % 2 == 0 ) {
+            return true;
+        }
+        else{
+            return false;
+        }
+
 	public int sumatoriaSucesiva(int num){
 		return ((1+num)/2)*(num);
 	}
     
+    boolean isPrime(int n) {
+        //revisa si n es multiplo de 2
+        if (n%2==0) return false;
+        //si no, solo revisa los impares
+        for(int i=3;i*i<=n;i+=2) {
+            if(n%i==0)
+                return false;
+        }
+        return true;
+    }
 }
