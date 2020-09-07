@@ -34,7 +34,8 @@ public class OperacionesBasicas{
         }
         return true;
     }
-    public decimal AreaTriangulo(decimal Base, decimal Altura){
+    
+	public decimal AreaTriangulo(decimal Base, decimal Altura){
         System.Out.Println($"La base ingresada es: {Base}");
         System.Out.Println($"La altura ingresada es: {Altura}");
         return ((Base*Altura)/2);
@@ -47,4 +48,12 @@ public class OperacionesBasicas{
         }
 		return num1/num2;
 	}
+	
+	public decimal restaNumeros(decimal num1, decimal num2){
+		return num1-num2;
+	}
+
+    public decimal areaRectangulo(int area, int base){
+        return area * base;
+    }
 }
