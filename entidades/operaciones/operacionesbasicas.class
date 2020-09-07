@@ -1,3 +1,42 @@
 public class OperacionesBasicas{
+
+    public static long fibonacciRecursivo(long posicion) {
+        if (posicion > 99){
+            return  posicion;
+        }
+		if (posicion < 2)
+			return posicion;
+		return fibonacciRecursivo(posicion - 1) + fibonacciRecursivo(posicion - 2);
+	}
+
+    boolean espar(int n){
+        if(n % 2 == 0 ) {
+            return true;
+            system.output.println("El Numero es Par");
+        }
+        else{
+            system.output.println("El Numero es Impar");
+            return false;
+        }
+
+	public int sumatoriaSucesiva(int a, int num){
+		return ((a+num)/2)*(num);
+	}
     
+    boolean isPrime(int o, int p, int q) {
+        int n = o + p + q;
+        //revisa si n es multiplo de 2
+        if (n%2==0) return false;
+        //si no, solo revisa los impares
+        for(int i=3;i*i<=n;i+=2) {
+            if(n%i==0)
+                return false;
+        }
+        return true;
+    }
+    public decimal AreaTriangulo(decimal Base, decimal Altura){
+        System.Out.Println($"La base ingresada es: {Base}");
+        System.Out.Println($"La altura ingresada es: {Altura}");
+        return ((Base*Altura)/2);
+    }
 }
