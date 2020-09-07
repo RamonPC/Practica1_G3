@@ -1,3 +1,7 @@
 public class OperacionesBasicas{
+
+	public int sumatoriaSucesiva(int num){
+		return ((1+num)/2)*(num);
+	}
     
 }
