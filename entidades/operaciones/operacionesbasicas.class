@@ -1,5 +1,10 @@
 public class OperacionesBasicas{
 
+    public static long fibonacciRecursivo(long posicion) {
+		if (posicion < 2)
+			return posicion;
+		return fibonacciRecursivo(posicion - 1) + fibonacciRecursivo(posicion - 2);
+	}
 
     boolean espar(int n){
         if(n % 2 == 0 ) {
