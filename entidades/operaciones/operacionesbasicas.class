@@ -44,4 +44,8 @@ public class OperacionesBasicas{
 	public decimal restaNumeros(decimal num1, decimal num2){
 		return num1-num2;
 	}
+
+    public decimal areaRectangulo(int area, int base){
+        return area * base;
+    }
 }
