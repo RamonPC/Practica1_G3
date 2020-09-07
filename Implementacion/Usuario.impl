@@ -1,0 +1,9 @@
+public class UsuarioImpl AbstractFacade<Usuario.class>{
+	
+	public EntityManager em;
+	
+	Object find(Object id);
+
+	void create(Objeto entidad);
+}
+
