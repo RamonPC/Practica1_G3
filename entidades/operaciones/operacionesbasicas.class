@@ -39,4 +39,8 @@ public class OperacionesBasicas{
         System.Out.Println($"La altura ingresada es: {Altura}");
         return ((Base*Altura)/2);
     }
+
+    public decimal areaRectangulo(int area, int base){
+        return area * base;
+    }
 }
