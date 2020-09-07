@@ -3,7 +3,11 @@ public class Registro{
     private String pass;
 
     @PostConstruct
-    Void cargar(){}
+    Void cargar(){
+        if(user.length <= 0){
+            Util.crearMensaje("Usuario invalido",SEVERITY_WARN);
+        }
+    }
 
     @PostDestroy
     Void eliminar(){}
@@ -11,9 +15,9 @@ public class Registro{
     public void RegistroListener(){
         try {
             Procesos.Registro(this.user, this.pass);
-            Util.crearMensaje("Registro Exitoso",SEVERITY_INFO);
+            Util.crearMensaje("Registro Exitoso de usuario",SEVERITY_INFO);
         } catch(Exception e){
-            Util.crearMensaje("Registro fallido", SEVERITY_ERROR);
+            Util.crearMensaje("Registro fallido de usuario", SEVERITY_ERROR);
         }
     }
 }
